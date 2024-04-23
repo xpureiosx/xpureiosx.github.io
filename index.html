@@ -27,23 +27,24 @@
                 <p>Add to Cydia</p>
             </a> -->
 
-            <a class="btn card" onclick="setmenujb()" id="sileo" href="sileo://source/https://ellekit.space">
+            <a class="btn card" onclick="setmenujb()" id="sileo" style="cursor:pointer;">
                 <img style="border-radius:25px;" class="icon" src="images/dopamine.png" alt="Dopamine Icon">
                 <p>Jailbreaks</p>
             </a>
 
-            <a class="btn card" onclick="setmenurepo()" id="zebra" href="zbra://https://ellekit.space">
+            <a class="btn card" onclick="setmenurepo()" id="zebra" style="cursor:pointer;">
                 <img style="border-radius:25px;" class="icon" src="images/procursus.png" alt="Procursus Icon">
                 <p>Popular Repos</p>
             </a>
 
-            <a class="btn card" id="installer" href="installer://add/https://ellekit.space">
+            <a class="btn card" onclick="setmenutroll()" id="installer" style="cursor:pointer;">
                 <img style="border-radius:25px;" class="icon" src="images/trollstore.jpg" alt="Trollstore Icon">
                 <p>Trollstore IPAs</p>
             </a>
 		<script defer> var cardContext = 0; </script>
-		<script defer> function setmenujb() { cardContext="<p> in jailbreak menu </p>" }; </script>
-		<script defer> function setmenurepo() { cardContext="<p> in repo menu </p>" }; </script>
+		<script defer> function setmenujb() { cardContext="<h2>Jailbreaks</h2>" }; </script>
+		<script defer> function setmenurepo() { cardContext="<h2>Popular Repositories</h2>" }; </script>
+		<script defer> function setmenutroll() { cardContext="<h2>Trollstore IPAs</h2>" }; </script>
           <script>
             
 		const cards = document.querySelectorAll('.card');
